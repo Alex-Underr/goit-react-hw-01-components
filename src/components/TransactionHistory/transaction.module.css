@@ -1,0 +1,34 @@
+.transactioHistory {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.transactioHistory thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.transactioHistory td,
+.transactioHistory th {
+  padding: 12px 15px;
+}
+.transactioHistory tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.transactioHistory tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.transactioHistory tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}

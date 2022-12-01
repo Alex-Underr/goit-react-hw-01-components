@@ -1,10 +1,21 @@
 import PropTypes from 'prop-types';
+import styles from './statistic.module.css';
+
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
 
 export default function statItem({ id, label, percentage }) {
   return (
-    <li class="item" id={id}>
-      <span class="label">{label}</span>
-      <span class="percentage">{percentage}%</span>
+    <li
+      style={{ backgroundColor: getRandomHexColor(), padding: '20px' }}
+      id={id}
+    >
+      <span className={styles.label}>
+        {label}
+        <br></br>
+      </span>
+      <span className={styles.percentage}>{percentage}%</span>
     </li>
   );
 }

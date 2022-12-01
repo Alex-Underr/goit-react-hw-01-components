@@ -4,7 +4,7 @@ import Profile from './Profile/Profile';
 import user from './Profile/user.json';
 import Statistic from './Statistics/Statistic';
 import data from './Statistics/data.json';
-import TransactionsList from './TransactionHistory/TransactionsList';
+import TransactionHistory from './TransactionHistory/TransactionHistory ';
 import transactions from './TransactionHistory/transactions.json';
 export const App = () => {
   return (
@@ -18,9 +18,9 @@ export const App = () => {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      <Statistic stats={data} />
+      <Statistic stats={data} title="Statistic" />
       <FriendList friends={friends} />
-      <TransactionsList items={transactions} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 };

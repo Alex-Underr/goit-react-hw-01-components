@@ -1,0 +1,18 @@
+.statList {
+  padding: 10px;
+}
+.title {
+  font-size: 24 px;
+  text-align: center;
+}
+.statItem {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 18 px;
+  font-weight: 600;
+}
+.percentage {
+  padding-top: 25px;
+}

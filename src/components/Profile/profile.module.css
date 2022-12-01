@@ -1,0 +1,41 @@
+li,
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: beige;
+}
+.description {
+}
+.avatar {
+  display: block;
+  border-radius: 50%;
+}
+.name {
+  font-family: fantasy;
+  font-size: 26px;
+}
+.tag {
+}
+.location {
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: rgb(245, 202, 146);
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.label {
+}
+.quantity {
+}
