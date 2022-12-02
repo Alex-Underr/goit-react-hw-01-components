@@ -5,7 +5,7 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
-export default function statItem({ id, label, percentage }) {
+export default function StatItem({ id, label, percentage }) {
   return (
     <li
       style={{ backgroundColor: getRandomHexColor(), padding: '20px' }}
@@ -20,7 +20,7 @@ export default function statItem({ id, label, percentage }) {
   );
 }
 
-statItem.propTypes = {
+StatItem.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string.isRequired,
   percentage: PropTypes.number.isRequired,

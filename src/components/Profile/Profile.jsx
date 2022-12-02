@@ -1,6 +1,7 @@
 import styles from './profile.module.css';
+import PropTypes from 'prop-types';
 
-export default function userProfile({
+export default function Profile({
   username,
   tag,
   location,
@@ -46,3 +47,13 @@ export default function userProfile({
     </div>
   );
 }
+
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  followers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
+};
